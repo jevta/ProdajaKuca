@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Projekat7</title>
+
+  <!-- Style -->
+  
+  <link rel="stylesheet" href="css/projekat7.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="image/logo.png">
+    </div>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Projekti</a>
+      <a href="">Galerija</a>
+      <a href="">Prodavnica</a>
+      <a href="">Nas Tim</a>
+      <a href="">Kontakt</a>
+      <div class="line"></div>
+    </nav>
+  </div>
+  
+    <div class="back"></div>
+        <div class="back1"></div>
+    <div class="slider">
+    <div class="owl-carousel" id="slider1">
+        <div><img src="image/Projekti/7/1.jpg" class="owl-img"></div>
+        <div><img src="image/Projekti/7/2.jpg" class="owl-img"></div>
+        <div><img src="image/Projekti/7/3.jpg" class="owl-img"></div>
+        <div><img src="image/Projekti/7/4.jpg" class="owl-img"></div>
+        <div><img src="image/Projekti/7/5.jpg" class="owl-img"></div>
+        <div><img src="image/Projekti/7/6.jpg" class="owl-img"></div>
+        <div><img src="image/Projekti/7/7.jpg" class="owl-img"></div>
+      </div>
+  </div>
+  <div class="view-navigation">
+    <div class="top-section">
+      <img id="image-container" src="image/Projekti/7/tehnical/temelj.jpg" alt="">
+      <div class="navigacija">
+        <img onclick="change_img(this)" src="image/Projekti/7/tehnical/temelj.jpg" alt="">
+        <img onclick="change_img(this)" src="image/Projekti/7/tehnical/1sprat.jpg" alt="">
+        <img onclick="change_img(this)" src="image/Projekti/7/tehnical/2sprat.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+ 
+  
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+          items:4,
+          loop:true,
+          margin:0,
+          autoplay:true,
+          merge:true,
+        });
+        });
+      </script>
+
+      <script>
+        var container = document.getElementById("image-container");
+        function change_img(image) {
+          container.src = image.src;
+        }
+      </script>
+</body>
+</html>
