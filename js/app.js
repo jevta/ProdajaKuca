@@ -1,3 +1,4 @@
+// p a r a l l a x  //
 $(window).scroll(function(){
     var scrollTop = $(window).scrollTop();
     $('.layer').each(function() {
@@ -8,7 +9,7 @@ $(window).scroll(function(){
         layer.css('transform', translate);
     });
 });
-
+//  kraj p a r a l l a x //
 
 
 $(".toggle-btn").click(function() {
@@ -18,7 +19,7 @@ $(".toggle-btn").click(function() {
 
 
 
-
+// s p l i t e r //
 document.addEventListener('DOMContentLoaded', function(){
     let split = document.getElementById('split');
     let topLayer = split.querySelector('.top');
@@ -46,47 +47,3 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   });
 
-  var $project = $('.project').isotope({
-    itemSelector: '.item',
-    layoutMode: 'fitRows',
-    getSortData: {
-        name: function (element) {
-            return $(element).text();
-        }
-    } 
-  });
-  
-  $('.filter button').on("click", function() {
-      var value = $(this).attr('data-filter');
-      $project.isotope({
-          filter: value
-      });
-  })
-  $('.sort button').on("click", function() {
-      var value = $(this).attr('data-filter');
-      $project.isotope({
-          sortBy: value
-  });
-  })
-
-
-
-
-  $(document).ready(function() {
-
-    var $grid = $('.gallery').isotope({
-      // options
-      itemSelector: '.picture',
-      layoutMode: 'masonry',
-      percentPosition: true
-    });
-  
-    $grid.imagesLoaded().progress(function() {
-      $grid.isotope('layout');
-    });
-  
-  });
-
-
-
-  
